@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FaRegEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
-
 export const FormOne = () => {
   const [showpass , setShowPass] = useState(false)
 
@@ -11,12 +10,12 @@ export const FormOne = () => {
   }
   return (
     <>
-    <div className=" flex justify-center h-screen bg-black">
-        <form className="w-[500px] h-[500px] bg-[#9edaa2] mt-16 rounded-lg text-center pt-10 flex flex-col justify-center items-center text-black font-semibold text-lg">
+    
+        <form className="w-[400px] h-[400px] bg-[#9edaa2] bg-opacity-25 mt-10 mb-5 rounded-lg text-center pt-8 flex flex-col justify-center items-center text-black font-semibold text-lg">
           <label className="mb-1">Full Name :</label>
-          <input className="w-[300px] h-10 border-black border-2 text-center mb-6" type="text" placeholder="Enter Your Name" />
+          <input className="w-[300px] h-10 border-green-700 border-2 text-center mb-6" type="text" placeholder="Enter Your Name" />
           <label className="mb-1">Email : </label>
-          <input className="w-[300px] h-10 border-black border-2 text-center mb-6" type="text" placeholder="Enter Your Email" />
+          <input className="w-[300px] h-10 border-green-700 border-2 text-center mb-6" type="text" placeholder="Enter Your Email" />
 
           <div className="relative">
             <label className="mb-2">Password :</label><br/>
@@ -26,13 +25,13 @@ export const FormOne = () => {
               :
               <FaEyeSlash onClick={handleShowPass} className="absolute top-1/2 right-1 translate-y-[-50%]" />
             }
-          <input className="w-[300px] h-10 border-black border-2 text-center mb-6" type={showpass?"text" : "password"}  placeholder="Enter your Password"/>
+          <input className="w-[300px] h-10 border-green-700 border-2 text-center mb-6" type={showpass?"text" : "password"}  placeholder="Enter your Password"/>
           </div>
 
 
-          <button className="bg-white p-4 rounded-lg mb-5 border-black border-2">Sign Up</button>
+          <button className="bg-white text-green-950 px-4 py-2 rounded-lg mb-5 border-green-700 border-2">Sign Up</button>
         </form>
-    </div>
+  
     
     </>
   )
